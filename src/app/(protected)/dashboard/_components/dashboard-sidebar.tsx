@@ -18,7 +18,7 @@ export function DashboardSidebar() {
   const handleLogout = useLogout();
   return (
     <aside className="hidden w-64 shrink-0 flex-col border-l border-border bg-surface p-5 md:flex">
-      {/* لوگو */}
+      {/* logo */}
       <Link href="/" className="mb-10 flex items-center gap-3 px-2">
         <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-primary/15 text-lg font-black text-primary">
           T
@@ -30,7 +30,7 @@ export function DashboardSidebar() {
         </div>
       </Link>
 
-      {/* منوی اصلی */}
+      {/* main menu */}
       <nav className="flex flex-1 flex-col gap-2">
         <NavItem
           href="/dashboard"
@@ -61,7 +61,7 @@ export function DashboardSidebar() {
         />
       </nav>
 
-      {/* بخش پایین سایدبار */}
+      {/* logout and settings */}
       <div className="border-t border-border pt-5">
         <NavItem
           href="/dashboard/settings"
